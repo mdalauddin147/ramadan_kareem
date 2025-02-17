@@ -32,9 +32,9 @@ body {
 /* Moving Background (Right to Left) */
 .background-moving {
     position: absolute;
-    width: 300vw; /* Extended width for smooth animation */
-    height: 100vh;
-    background: url('assets/Ramadan@.jpg') repeat-x center/cover;
+    width: 500vw; /* Extended width for smooth animation */
+    height: 400vh;
+    background: url('assets/white.jpg') repeat-x center/cover;
     animation: scrollRightToLeft 15s linear infinite;
 }
 
