@@ -41,7 +41,7 @@ body {
 /* Foreground Moving (Moves at Same Speed) */
 .foreground-moving {
     position: absolute;
-    width: 300vw;
+    width: 250vw;
     height: 100vh;
     background: url('assets/Ramadan@.jpg') repeat-x center/contain;
     animation: scrollRightToLeft 15s linear infinite;
