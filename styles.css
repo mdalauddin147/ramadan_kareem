@@ -1,22 +1,22 @@
  /* Fullscreen Setup */
-body {
-    margin: 0;
-    overflow: hidden;
-    font-family: "Arial", sans-serif;
-    background-color: black;
-}
+ body {
+     margin: 0;
+     overflow: hidden;
+     font-family: "Arial", sans-serif;
+     background-color: black;
+ }
 
-/* Background Container */
-.background-container {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1;
-}
+ /* Background Container */
+ .background-container {
+     position: fixed;
+     width: 100vw;
+     height: 100vh;
+     overflow: hidden;
+     z-index: -1;
+ }
 
-/* H1 Styling */
-/*h1{ 
+ /* H1 Styling */
+ /*h1{ 
     font-weight: bold;
     color: white;
     text-transform: uppercase;
@@ -29,33 +29,39 @@ body {
     -webkit-text-fill-color: transparent;
 }
 */
-/* Moving Background (Right to Left) */
-.background-moving {
-    position: absolute;
-    width: 500vw; /* Extended width for smooth animation */
-    height: 400vh;
-    background: url('assets/white.jpg') repeat-x center/cover;
-    animation: scrollRightToLeft 15s linear infinite;
-}
+ /* Moving Background (Right to Left) */
+ .background-moving {
+     position: absolute;
+     width: 500vw;
+     /* Extended width for smooth animation */
+     height: 400vh;
+     background: url('assets/white.jpg') repeat-x center/cover;
+     animation: scrollRightToLeft 15s linear infinite;
+ }
 
-/* Foreground Moving (Moves at Same Speed) */
-.foreground-moving {
-    position: absolute;
-    width: 250vw;
-    height: 100vh;
-    background: url('assets/Ramadan@.jpg') repeat-x center/contain;
-    animation: scrollRightToLeft 15s linear infinite;
-}
+ /* Foreground Moving (Moves at Same Speed) */
+ .foreground-moving {
+     position: absolute;
+     width: 250vw;
+     height: 100vh;
+     background: url('assets/Ramadan@.jpg') repeat-x center/contain;
+     animation: scrollRightToLeft 15s linear infinite;
+ }
 
-/* Right to Left Animation */
-@keyframes scrollRightToLeft {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-}
+ /* Right to Left Animation */
+ @keyframes scrollRightToLeft {
+     from {
+         transform: translateX(0);
+     }
 
-/* Centered Text Container */
+     to {
+         transform: translateX(-50%);
+     }
+ }
 
-/*.message-container {
+ /* Centered Text Container */
+
+ /*.message-container {
     position: absolute;
     bottom: 20px;  
     left: 50%;
@@ -66,7 +72,7 @@ body {
     display: ruby-base-container;
 }
 */
-/*.word {
+ /*.word {
     font-weight: bold;
     font-size: 16px;
     color: #17202a ;
@@ -77,3 +83,28 @@ body {
 
     
 }*/
+
+#element {
+    color: #17202a;
+    font-weight: bold;
+    font-size: 18px;
+    height: auto;
+    /* Changed from fixed height to auto for better text display */
+    margin-top: px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    max-width: 80%;
+    position: fixed;
+    /* Changed from absolute to fixed for better mobile positioning */
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    /* Added padding for better touch experience */
+    /* background-color: rgba(255, 255, 255, 0.8); Optional: improves readability */
+    border-radius: 5px;
+    /* Optional: gives a smooth, rounded look */
+    display: block;
+    /* Changed from invalid ruby-base-container to block */
+}
