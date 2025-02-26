@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const messageText = "Ramadan is a time of mercy, forgiveness, and countless blessings. May you receive all three in abundance. Ramadan Kareem! 🌸🌙";
-    const messageDiv = document.getElementById("message");
+    // const messageText = "Ramadan is a time of mercy, forgiveness, and countless blessings. May you receive all three in abundance. Ramadan Kareem! 🌸🌙";
+    // const messageDiv = document.getElementById("message");
 
     // Split the message into words and append them as individual spans
     messageText.split(" ").forEach(word => {

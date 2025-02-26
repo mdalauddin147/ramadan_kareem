@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
     <title>Ramadan Kareem</title>
     <link rel="icon" href="assets/f2.png" type="image/x-icon">
-     
+
     <meta htpp-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Ramadan Kareem">
 
-    
-    
+
+
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <!-- Ramadan Mubarak Title -->
@@ -27,9 +29,58 @@
 
     <!-- Message Text -->
     <div id="message" class="message-container"></div>
+    <div>
+        <!-- Element to contain animated typing -->
+        <span id="element"></span>
 
-    
-    <script src="script.js"></script>
+        <!-- Load library from the CDN -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <script>
+            var typed = new Typed('#element', {
+                strings: [
+                    "Ramadan is a time of mercy, forgiveness, and countless blessings. May you receive all three in abundance. Ramadan Kareem! 🌸🌙"
+                ],
+                typeSpeed: 50,
+                backSpeed: 30,
+                loop: true
+            });
+        </script>
+
+        </script>
+        <style>
+            #element {
+                color: #17202a;
+                font-weight: bold;
+                font-size: 18px;
+                height: auto;
+                /* Changed from fixed height to auto for better text display */
+                margin-top: 10px;
+                margin-bottom: 10px;
+                text-align: center;
+                cursor: pointer;
+                max-width: 80%;
+                position: fixed;
+                /* Changed from absolute to fixed for better mobile positioning */
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 5px 10px;
+                /* Added padding for better touch experience */
+                /* background-color: rgba(255, 255, 255, 0.8); Optional: improves readability */
+                border-radius: 5px;
+                /* Optional: gives a smooth, rounded look */
+                display: block;
+                /* Changed from invalid ruby-base-container to block */
+            }
+        </style>
+
+
+
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
 
 </body>
+
 </html>
